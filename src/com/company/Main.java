@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +20,12 @@ public class Main {
         System.out.println((ageAndTemp(generateRandomAge(), 21)));
         System.out.println((ageAndTemp(generateRandomAge(), 37)));
         System.out.println((ageAndTemp(generateRandomAge(), 7)));
+
+        RandomNum cat = new RandomNum(10, "asd");
+        RandomNum cat1 = new RandomNum();
+        cat.info();
+        cat1.info();
+
 
     }
 
@@ -65,6 +69,22 @@ public class Main {
     }
 }
 
+class RandomNum {
+    int age;
+    String name;
 
+    public RandomNum(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public RandomNum() {
+    }
+
+    void info() {
+        System.out.println(age + " " + name);
+
+    }
+}
 
 
