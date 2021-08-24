@@ -39,8 +39,6 @@ public class HomeWork2 {
 class SortArraysNum {
     public static void sortNum() {
         int[] array = new int[10];
-        int index = 0;
-        boolean numPresent = false;
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 30);
         }
