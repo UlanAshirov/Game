@@ -1,6 +1,4 @@
-package com.company.HomeWorkGames;
-
-import javax.swing.*;
+package com.company.HomeWorkGame;
 
 public class Hero {
     private int health;

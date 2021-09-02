@@ -1,4 +1,4 @@
-package com.company.HomeWorkGames;
+package com.company.HomeWorkGame;
 
 public class Boss {
     private int health;
