@@ -1,31 +1,32 @@
 package com.company.HomeWorkGame;
 
-public class Boss {
-    private int health;
-    private int damage;
-    private String defenceType;
+public class Boss extends GameEntity {
+    Weapon weapon;
 
-    public int getHealth() {
-        return health;
+    public Boss(int health, int damage, String defenceType, String superpower, Weapon weapon) {
+        super(health, damage, defenceType, superpower);
+        this.weapon = weapon;
     }
 
-    public void setHealth(int health) {
-        this.health = health;
+    public Weapon getWeapon() {
+        return weapon;
     }
 
-    public int getDamage() {
-        return damage;
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
-    public void setDamage(int damage) {
-        this.damage = damage;
+    @Override
+    public String getInfo() {
+        System.out.println("Оружие босса " + getWeapon());
+        return super.getInfo();
     }
 
-    public String getDefenceType() {
-        return defenceType;
-    }
-
-    public void setDefenceType(String defenceType) {
-        this.defenceType = defenceType;
+    @Override
+    public String toString() {
+        return "Boss{" +
+                "weapon=" + weapon +
+                '}';
     }
 }
+
